@@ -2,11 +2,16 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
   
-  ul 
-    each val in messages
-      li #{val.user}: #{val.text} | #{val.added}
+  div(class='board') 
+    ul(class='groupM')
+      each val in messages
+        li
+          ul(class='userM') 
+            li(class='username') #{val.user}
+            li(class='usertext') #{val.text} 
+            li(class='usertime') #{val.added.toLocaleString('en-US',{hour: 'numeric', minute: 'numeric'})}
 
-  a(href='http://localhost:3000/new') 
-    input(type='button', value='send message')
+  div(class='send')
+    a(href='http://localhost:3000/new') 
+      input(type='button', value='send message', id='button')

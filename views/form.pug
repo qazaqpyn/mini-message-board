@@ -3,13 +3,13 @@ extends layout
 block content 
     h1= title 
     form(method='POST', action='/new')
-        p
+        p(class='inputdata')
             | username: 
             input(
                 type='text'
                 name='username'
             )
-            |               text:   
+            |                   text:   
             input(
                 type='text'
                 name='usertext'
@@ -17,6 +17,8 @@ block content
         input(
             type='submit'
             value='send'
+            class='send'
+            id='button'
         )
 
 

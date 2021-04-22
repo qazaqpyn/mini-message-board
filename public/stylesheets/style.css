@@ -3,6 +3,85 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+h1{
+  text-align: center;
+}
+
+a > input{
+  margin: auto;
+}
+
+
+.userM {
+  list-style-type: none;
+  padding: 0;
+  float: right;
+  margin-top: 10px;
+}
+
+
+.username{
+  font-size: 12px;
+  text-align: end;
+}
+
+.usertime{
+  font-size: 10px;
+  text-align: end;
+}
+
+.usertext{
+  display: inline-block;
+  padding: 7px;
+  border:1px solid rgb(53, 102, 158);
+  border-radius: 5px;
+}
+
+.groupM{
+  margin: auto;
+  padding: 0;
+  width: 33vw;
+  height: 70vh;
+  border-top: 3px solid rgb(53, 102, 158);
+  border-bottom: 3px solid rgb(53, 102, 158);
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+
+#button{
+  background-color: transparent;
+  border: 3px solid rgb(53, 102, 158);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#button:hover{
+  transform: scale(1.01);
+}
+
+.send{
+
+  position: absolute;
+  right: 35%;
+  margin-top: 10px;
+}
+
+.board{
+  position: relative;
+}
+
+.inputdata{
+  text-align: center;
+  position: relative;
+  padding-top: 50px;
+}
+
+.inputdata > input{
+  background-color: transparent;
+  border: 3px solid rgb(53, 102, 158);
+  border-radius: 5px;
+  padding: 10px;
 }
