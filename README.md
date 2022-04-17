@@ -1,4 +1,4 @@
-# Shopping Cart
+# Mini message board
 ## What is this about?
 This online mini-message board project is to enforce my learnings on EXPRESS (NodeJS) as per https://theodinproject.com The design of the project is to showcase the understanding of concepts below:
 
